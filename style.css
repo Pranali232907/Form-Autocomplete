@@ -1,0 +1,142 @@
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: #8c52ff;
+            color: #333;
+        }
+        
+        .search-box {
+            background: white;
+            margin: 200px auto 0;
+            border-radius: 5px;
+            position: relative;
+        }
+        
+        .row {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            border: 1px solid grey;
+        }
+        
+        input {
+            flex: 1;
+            height: 50px;
+            background: transparent;
+            border: 0;
+            outline: 0;
+            font-size: 18px;
+            color: #333;
+        }
+        
+        button {
+            background: transparent;
+            border: 0;
+            outline: 0;
+            max-width: 40px;
+        }
+        
+        button .fa-solid {
+            width: 25px;
+            color: #8c52ff;
+            font-size: 22px;
+            cursor: pointer;
+        }
+        
+        placeholder {
+            color: #555;
+        }
+        
+        .result-box {
+            border: 0.5px solid grey;
+        }
+        
+        .result-box ul {
+            border-top: 1px solid white;
+        }
+        
+        .result-box ul li {
+            list-style: none;
+            border-radius: 3px;
+            padding: 15px 10px;
+            cursor: pointer;
+        }
+        
+        .result-box ul li:hover {
+            background: whitesmoke;
+        }
+        
+        @media (min-width: 300px) {
+            .search-box {
+                width: 300px;
+                top: -150px;
+            }
+            .result-box {
+                max-height: 300px;
+                overflow-y: scroll;
+            }
+        }
+        
+        @media (min-width: 400px) {
+            .search-box {
+                width: 380px;
+                top: -150px;
+            }
+            .result-box {
+                max-height: 300px;
+                overflow-y: scroll;
+            }
+        }
+        /* Larger than phablet (also point when grid becomes active) */
+        
+        @media (min-width: 550px) {
+            .search-box {
+                width: 450px;
+                top: -150px;
+            }
+            .result-box {
+                max-height: 300px;
+                overflow-y: scroll;
+            }
+        }
+        /* Larger than tablet */
+        
+        @media (min-width: 750px) {
+            .search-box {
+                width: 500px;
+                top: -150px;
+            }
+            .result-box {
+                max-height: 350px;
+                overflow-y: scroll;
+            }
+        }
+        /* Larger than desktop */
+        
+        @media (min-width: 1000px) {
+            .search-box {
+                width: 550px;
+                top: -150px;
+            }
+            .result-box {
+                max-height: 350px;
+                overflow-y: scroll;
+            }
+        }
+        /* Larger than Desktop HD */
+        
+        @media (min-width: 1200px) {
+            .search-box {
+                width: 600px;
+                top: -150px;
+            }
+            .result-box {
+                max-height: 400px;
+                overflow-y: scroll;
+            }
+        }
